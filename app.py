@@ -24,15 +24,15 @@ def handle_request(body, client, ack, logger):
     if body['text'] != '':
         if body['text'].startswith('list'):
             ack()
-            logger.info("in if list")
+            logger.info("Get afkers list")
             display_afk(say)
         if body['text'].startswith('del'):
             ack()
             remove_afk(say, body['user_name'])
-            logger.info("in if del")
+            logger.info("%s change his status!" % body['user_name'])
         else:
             ack("I got it! %s" % str(afkers))
-            logger.info("in if")
+            logger.info("%s change his status!" % body['user_name'])
             newafk = {}
             newafk['note'] = body['text']
             newafk['since'] = t
