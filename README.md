@@ -35,7 +35,6 @@ make a virtualenv and install dependencies
 INFO:slack_bolt.App:⚡️ Bolt app is running! (development server)
 ```
 
-
 ## Examples
 
 _/afk i will be away for 1h_
